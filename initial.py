@@ -14,6 +14,8 @@ pygame.display.set_caption("game basic")
 playerImg = pygame.image.load("img/borb.png")
 playerX = 100
 playerY = 100
+DEFAULT_IMAGE_SIZE = (80, 80)
+playerImg = pygame.transform.scale(playerImg, DEFAULT_IMAGE_SIZE)
 
 def player(x, y):
     screen.blit(playerImg, (x, y))
